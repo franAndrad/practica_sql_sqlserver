@@ -5,7 +5,7 @@ Practicá SQL de forma aislada usando SQL Server en Docker. Cada ejercicio tiene
 ## Requisitos
 
 - Docker Desktop instalado y corriendo.
-- PowerShell, Git Bash o CMD.
+- PowerShell.
 - (Opcional) VS Code con alguna de estas extensiones:
   - **MSSQL** / **SQL Server** (mssql) o **Azure Data Studio**.
   - **Database Client** (Weijan Chen): `cweijan.vscode-database-client`
@@ -15,7 +15,7 @@ Practicá SQL de forma aislada usando SQL Server en Docker. Cada ejercicio tiene
 ```
 .
 ├── docker-compose.yml
-├── run.ps1 / run.sh / run.bat
+├── run.ps1
 └── ejercicios/<nombre>/
    ├── 01_database.sql
    ├── 02_tables.sql
@@ -27,21 +27,14 @@ Practicá SQL de forma aislada usando SQL Server en Docker. Cada ejercicio tiene
 
 1. Levantar el contenedor (SQL Server):
 
-   ```bash
+   ```powershell
    docker compose up -d
    ```
 
 2. Ejecutar un ejercicio:
 
    ```powershell
-   # PowerShell
    .\run.ps1 ejercicios\confiteria
-
-   # Git Bash / WSL
-   ./run.sh ejercicios/confiteria
-
-   # CMD
-   run.bat ejercicios\confiteria
    ```
 
 3. Conectarte manualmente (ejemplos):
@@ -68,6 +61,8 @@ Practicá SQL de forma aislada usando SQL Server en Docker. Cada ejercicio tiene
 
 - SQL Server Management Studio (SSMS) o Azure Data Studio: crear conexión con las credenciales arriba.
 - En la extensión **Database Client** de VS Code: elegir **SQL Server / MSSQL** o usar la extensión oficial `mssql`.
+
+![Conexión SQL Server](./conexion.png)
 
 Consejo importante: los archivos `04_queries.sql` contienen las consultas/soluciones individuales. Estos archivos NO deben subirse al repositorio; en su lugar cada alumno debe ejecutar las consultas localmente y subir sólo los scripts de creación/tablas/datos si corresponde.
 

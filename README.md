@@ -57,7 +57,7 @@ CREATE DATABASE confiteria;
 
 `02_tables.sql`
 ```sql
-\c confiteria;
+USE CONFITERIA;
 CREATE TABLE MOZOS (
     id INT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL
@@ -66,7 +66,7 @@ CREATE TABLE MOZOS (
 
 `03_data.sql`
 ```sql
-\c confiteria;
+USE CONFITERIA;
 INSERT INTO MOZOS (id, nombre) VALUES (1, 'Juan Perez');
 ```
 

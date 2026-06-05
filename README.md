@@ -19,13 +19,8 @@ Practicá SQL de forma aislada usando SQL Server en Docker.
    ├── 01_database.sql     # Creación de la base de datos
    ├── 02_tables.sql       # Creación de tablas
    ├── 03_data.sql         # Inserción de datos
-   └── consultas/          # Archivos de consultas separados por tema
-       ├── consultas_basicas.sql
-       ├── consultas_operadores_comparacion.sql
-       ├── consultas_multitablas.sql
-       ├── consultas_sumarias.sql
-       ├── subconsultas.sql
-       └── extra.sql
+   └── consultas/          # Consultas / respuestas (NO ejecutadas por el script)
+       └── respuestas.sql  # o archivos separados por tema
 ```
 
 ## Cómo empezar (lo más simple)

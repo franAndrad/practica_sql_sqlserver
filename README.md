@@ -43,7 +43,7 @@ Practicá SQL de forma aislada usando SQL Server en Docker.
 
 | Extensión MSSQL / SQL Server | Extensión Database Client (Weijan Chen) |
 |---|---|
-| ![Conexión MSSQL](./conexion_extension_sql_server.png) | ![Conexión Database Client](./conexion.png) |
+| ![Conexión MSSQL](./img/conexion_extension_sql_server.png) | ![Conexión Database Client](./img/conexion.png) |
 
 > **Importante:** los archivos `04_queries.sql` contienen las soluciones y **no deben subirse al repositorio**. Cada alumno ejecuta sus consultas localmente.
 
@@ -74,3 +74,7 @@ INSERT INTO MOZOS (id, nombre) VALUES (1, 'Juan Perez');
 -- Ejecutá esto desde VS Code con Database Client
 SELECT * FROM MOZOS;
 ```
+
+---
+
+Hecho por **Francisco Andrada**

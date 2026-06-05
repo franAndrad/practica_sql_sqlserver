@@ -19,7 +19,13 @@ Practicá SQL de forma aislada usando SQL Server en Docker.
    ├── 01_database.sql     # Creación de la base de datos
    ├── 02_tables.sql       # Creación de tablas
    ├── 03_data.sql         # Inserción de datos
-   └── 04_queries.sql      # Consultas / respuestas (NO subir)
+   └── consultas/          # Archivos de consultas separados por tema
+       ├── consultas_basicas.sql
+       ├── consultas_operadores_comparacion.sql
+       ├── consultas_multitablas.sql
+       ├── consultas_sumarias.sql
+       ├── subconsultas.sql
+       └── extra.sql
 ```
 
 ## Cómo empezar (lo más simple)
@@ -37,7 +43,7 @@ Practicá SQL de forma aislada usando SQL Server en Docker.
    - **Password:** `TuPassword123!`
    - **Database:** `confiteria` (o el nombre del ejercicio)
 
-3. **Abrí `ejercicios/<nombre>/04_queries.sql`** y ejecutá las consultas desde el editor usando **Database Client** (Weijan Chen). Para ver el diagrama / esquema de la base de datos usá la extensión **MSSQL / SQL Server** (mssql).
+3. **Abrí los archivos de `ejercicios/<nombre>/consultas/`** y ejecutá las consultas desde el editor usando **Database Client** (Weijan Chen). Para ver el diagrama / esquema de la base de datos usá la extensión **MSSQL / SQL Server** (mssql).
 
 ### Configuración de las extensiones en VS Code
 
@@ -45,7 +51,7 @@ Practicá SQL de forma aislada usando SQL Server en Docker.
 |---|---|
 | ![Conexión MSSQL](./img/conexion_extension_sql_server.png) | ![Conexión Database Client](./img/conexion.png) |
 
-> **Importante:** los archivos `04_queries.sql` contienen las soluciones y **no deben subirse al repositorio**. Cada alumno ejecuta sus consultas localmente.
+> **Importante:** los archivos dentro de `consultas/` contienen las soluciones y **no deben subirse al repositorio**. Cada alumno ejecuta sus consultas localmente.
 
 ## Ejemplo
 
@@ -69,11 +75,7 @@ CREATE TABLE MOZOS (
 INSERT INTO MOZOS (id, nombre) VALUES (1, 'Juan Perez');
 ```
 
-`04_queries.sql`
-```sql
--- Ejecutá esto desde VS Code con Database Client
-SELECT * FROM MOZOS;
-```
+Archivos en `consultas/` — ejecutalos desde VS Code con Database Client.
 
 ---
 

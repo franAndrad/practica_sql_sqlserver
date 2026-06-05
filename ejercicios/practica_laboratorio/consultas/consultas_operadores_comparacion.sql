@@ -1,0 +1,3 @@
+USE GDA_PRACTICA_LABORATORIO;
+
+-- (pendiente)

@@ -1,0 +1,5 @@
+USE GDA_PRACTICA_LABORATORIO;
+
+-- a.
+SELECT D.id, E.apellido, E.id_jefe
+FROM EMPLEADOS E JOIN DEPTO D ON E.id=D.id

@@ -52,7 +52,7 @@ Practicá SQL de forma aislada usando SQL Server en Docker.
 
 `01_database.sql`
 ```sql
-CREATE DATABASE confiteria;
+CREATE DATABASE CONFITERIA;
 ```
 
 `02_tables.sql`

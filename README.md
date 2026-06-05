@@ -34,7 +34,7 @@ Practicá SQL de forma aislada usando SQL Server en Docker.
    ```powershell
    .\run.ps1 ejercicios\confiteria
    ```
-   El script hace `docker compose up -d`, ejecuta `01_database.sql` → `02_tables.sql` → `03_data.sql` (saltea `04_queries.sql`) y deja el contenedor corriendo.
+   El script hace `docker compose up -d`, ejecuta `01_database.sql` → `02_tables.sql` → `03_data.sql` (los archivos de `consultas/` se ejecutan aparte desde VS Code) y deja el contenedor corriendo.
 
 2. **Conectarte desde VS Code** con ambas extensiones:
    - **Host:** `127.0.0.1`

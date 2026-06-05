@@ -58,8 +58,8 @@ if (-not $ready) {
 
 Write-Host ">>> SQL Server listo." -ForegroundColor Green
 
-# Buscar archivos .sql y ordenarlos
-$sqlFiles = Get-ChildItem -Path $ExerciseDir -Filter "*.sql" | Sort-Object Name
+# Buscar archivos .sql, ordenarlos y excluir el 04_queries.sql
+$sqlFiles = Get-ChildItem -Path $ExerciseDir -Filter "*.sql" | Sort-Object Name | Where-Object { $_.Name -notlike "04_*" }
 
 if ($sqlFiles.Count -eq 0) {
     Write-Host "No se encontraron archivos .sql en '$ExerciseDir'" -ForegroundColor Red

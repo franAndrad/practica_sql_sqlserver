@@ -1,0 +1,5 @@
+-- Tomando en cuenta la siguiente estructura de datos escriba la consulta que permita mostrar todos los datos de los clientes que compraron "Azúcar Ledesma" durante el año pasado (debe funcionar a partir de ahora), junto al apellido y nombre del empleado que le vendió.
+--
+-- Resultado esperado (basado en los datos de prueba cargados en 03_data.sql):
+-- nro_cliente | apellido | nombre | calle      | nro_calle | id_barrio | apellido_empleado | nombre_empleado
+-- 1           | Perez    | Juan   | Av Cabildo | 4321      | 1         | Gomez             | Matias

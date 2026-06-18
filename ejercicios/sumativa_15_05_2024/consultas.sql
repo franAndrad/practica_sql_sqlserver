@@ -1,0 +1,35 @@
+-- Obtener todos los datos de los Empleados cuyos salarios estén comprendidos entre $450.000 y $750.000,
+-- la fecha de ingreso sea superior al 1ro de enero de 2020, que el apellido comience con “M” y que no posea
+-- asignado un porcentaje de comisión.
+-- Ordenar los resultados por el apellido ascendente y por nombre descendente.
+--
+-- Resultado esperado:
+-- id | apellido | nombre  | id_usuario | fecha_ingreso | comentarios | id_jefe | titulo          | depto_id | salario   | porcent_comision
+-- 26 | Martinez | Zulma   | zmartin    | 2021-05-10    | NULL        | 1       | Agente de Stock | 41       | 500000.00 | NULL
+-- 28 | Mendez   | Zack    | zmendez    | 2022-08-15    | NULL        | 1       | Agente de Stock | 41       | 600000.00 | NULL
+-- 27 | Mendez   | Alberto | amendez    | 2022-08-15    | NULL        | 1       | Agente de Stock | 41       | 600000.00 | NULL
+
+-- Mostrar el nombre del producto, ciudad y el id del jefe del almacén, para todos los productos cuya
+-- cantidad en stock esté por debajo del punto de repedido.
+--
+-- Resultado esperado (ejemplo de algunos registros):
+-- nombre                  | ciudad    | id_jefe
+-- Pro Curling Bar         | Seattle   | 6
+-- Puckett Bat             | Seattle   | 6
+-- New Air Pump            | Hong Kong | 9
+-- ... (y otros registros que cumplen la condicion)
+
+-- Mostrar nombre de la Ciudad y la cantidad de productos que hay en stock en las ciudades de
+-- Seattle y San Pablo, siempre y cuando esa cantidad de productos en stock supere los 2000 productos.
+--
+-- Resultado esperado:
+-- Ciudad    | cantidad_productos
+-- Seattle   | 20959 (aprox)
+-- San Pablo | 5360 (aprox)
+
+-- Listar el id, nombre y promedio de sueldo del departamento que mayor promedio de sueldo tenga
+-- comparado con los restantes departamentos.
+--
+-- Resultado esperado:
+-- id | nombre      | promedio_sueldo
+-- 41 | Operaciones | 340918.00 (aprox, debido a los nuevos empleados agregados)

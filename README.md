@@ -11,7 +11,7 @@ Practicá SQL de forma aislada usando SQL Server en Docker.
 
 ## Estructura
 
-```
+```estructura
 .
 ├── docker-compose.yml
 ├── run.ps1
@@ -26,9 +26,11 @@ Practicá SQL de forma aislada usando SQL Server en Docker.
 ## Cómo empezar (lo más simple)
 
 1. **Levantar SQL Server, crear BD, tablas y cargar datos** (todo en un solo comando):
+
    ```powershell
    .\run.ps1 ejercicios\confiteria
    ```
+
    El script hace `docker compose up -d`, ejecuta `01_database.sql` → `02_tables.sql` → `03_data.sql` (los archivos de `consultas/` se ejecutan aparte desde VS Code) y deja el contenedor corriendo.
 
 2. **Conectarte desde VS Code** con ambas extensiones:
@@ -42,8 +44,8 @@ Practicá SQL de forma aislada usando SQL Server en Docker.
 
 ### Configuración de las extensiones en VS Code
 
-| Extensión MSSQL / SQL Server | Extensión Database Client (Weijan Chen) |
-|---|---|
+| Extensión MSSQL / SQL Server                               | Extensión Database Client (Weijan Chen)         |
+| ---------------------------------------------------------- | ----------------------------------------------- |
 | ![Conexión MSSQL](./img/conexion_extension_sql_server.png) | ![Conexión Database Client](./img/conexion.png) |
 
 > **Importante:** los archivos dentro de `consultas/` contienen las soluciones y **no deben subirse al repositorio**. Cada alumno ejecuta sus consultas localmente.
@@ -51,11 +53,13 @@ Practicá SQL de forma aislada usando SQL Server en Docker.
 ## Ejemplo
 
 `01_database.sql`
+
 ```sql
 CREATE DATABASE CONFITERIA;
 ```
 
 `02_tables.sql`
+
 ```sql
 USE CONFITERIA;
 CREATE TABLE MOZOS (
@@ -65,6 +69,7 @@ CREATE TABLE MOZOS (
 ```
 
 `03_data.sql`
+
 ```sql
 USE CONFITERIA;
 INSERT INTO MOZOS (id, nombre) VALUES (1, 'Juan Perez');

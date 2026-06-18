@@ -68,6 +68,6 @@ JOIN depto d on e.depto_id = d.id
 GROUP BY d.id,d.nombre
 HAVING AVG(e.salario) >= ALL (SELECT AVG(e2.salario)
                               FROM empleados e2
-                              JOIN depto d on e2.depto_id = d.id
-                              GROUP BY d.nombre
+                              JOIN depto d2 on e2.depto_id = d2.id
+                              GROUP BY d2.nombre
                               )
